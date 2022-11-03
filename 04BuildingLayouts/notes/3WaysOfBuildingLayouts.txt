@@ -1,0 +1,20 @@
+3 Ways of Building Layouts
+
+Макет это способ размещения и расположения текста, изображений и другого содержимого
+на веб-странице. Макет даёт нам визуальную структуру.
+Построение макета - это организация элементов страницы в визуальную структуру, вместо того
+чтобы просто распологать их друг за другом.
+
+Есть два типа макетов:
+
+- Макет страницы (ораганизация больших компонентов на странице)
+
+- Макет компонента (организация маленьких компонентов в один более сложный компонент)
+
+Три варианта построения макета:
+
+- Float layout (the old way of building layouts of all sizes, using the float CSS property).
+
+- Flex layout (modern way of laying out elements in a 1-dimensional row without using floats).
+
+- Grid layout (for laying out elements in a fully-fledged 2-dimensional grid)
