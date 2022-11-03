@@ -1,0 +1,13 @@
+Developer Tools 
+
+Инструменты, которые помогут в разработке
+
+- Google
+
+- MDN
+
+- Stackoverflow
+
+- Validators
+
+- Diffchecker 

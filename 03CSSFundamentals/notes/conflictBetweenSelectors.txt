@@ -1,0 +1,38 @@
+Conflict between selectors
+
+У селекторов есть приоритет:
+Если мы пытаемся обратиться к одному и тому же селектору,
+с одинаковыми правилами, например:
+<p id="p" class="p"></p>
+
+p {
+  font-size: 10px;
+}
+#p {
+  font-size: 10px;
+}
+.p {
+  font-size: 10px;
+}
+
+Выигрывает тот селектор, у которого выше приоритет.
+Если у селекторов одинаковый приоритет, применяется то свойство, которое в коде последнее.
+
+| Highest priority    
+|
+| (5) Keyword !Important
+|
+| (4) Inline style (style attribute in HTML)
+|
+| (3) ID (#) selector
+|
+| (2) Class (.) or pseudo-class (:) selectors
+|
+| (1) Element selector (div, p, h)
+| 
+| (0) Universal selector (*)
+|
+| () Lowest priority
+
+Если мы обращаемся к селекторам одного и того же элемента и при этом,
+конфликтующих свойств нет, применятся все.
