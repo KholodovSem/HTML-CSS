@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 20px;
+
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 20px;
+
+  /* align-items: center;
+  justify-items: center; */
+
+  height: 300px;
+
+  border: 2px dashed tomato;
+
+  background-color: cadetblue;
+}
+
+.grid-item {
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
+  background-color: aliceblue;
+}
+
+.grid-item1 {
+  align-self: center;
+  justify-self: center;
+}
