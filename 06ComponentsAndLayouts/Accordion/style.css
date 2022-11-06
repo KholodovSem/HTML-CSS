@@ -1,0 +1,88 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Accordion component */
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+}
+
+.accordion-item {
+  padding: 30px 20px;
+
+  box-shadow: 0px 0px 15px 5px rgb(0, 0, 0, 0.1);
+}
+
+.accordion-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.accordion-item__title {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-item__number {
+  margin-right: 20px;
+
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.accordion-item__icon {
+  margin-left: auto;
+
+  width: 25px;
+}
+
+/* Clicked element (Accordion item)*/
+
+.content {
+  padding: 0 55px;
+}
+
+.accordion-item:nth-child(2) {
+  color: #087f5b;
+
+  border-top: 5px solid #087f5b;
+}
+
+.accordion-item:nth-child(2) header {
+  margin-bottom: 40px;
+}
+
+.accordion-item__main-text {
+  margin-bottom: 30px;
+
+  line-height: 1.5;
+
+  color: #000;
+}
+
+.accordion-item__list {
+  margin-left: 18px;
+
+  color: #868e96;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
