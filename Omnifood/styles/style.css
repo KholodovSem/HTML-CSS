@@ -1,0 +1,717 @@
+/* 
+  Header 
+*/
+
+.header {
+  display: flex;
+  align-items: center;
+
+  /* Becouse we want header to be sticky */
+  height: 9.6rem;
+
+  padding: 0 4.8rem;
+
+  background-color: var(--primary-tint);
+}
+
+.header_navigation {
+  margin-left: auto;
+}
+
+.navigation_list {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  list-style: none;
+}
+
+.header_link:link,
+.header_link:visited {
+  display: inline-block;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  color: var(--gray-dark);
+
+  transition: all 300ms;
+}
+
+.header_link:hover,
+.header_link:active {
+  color: var(--primary-shadow);
+}
+
+.header_link-cta:link,
+.header_link-cta:visited {
+  padding: 1.2rem 2.4rem;
+
+  border-radius: 9px;
+
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.header_link-cta:hover,
+.header_link-cta:active {
+  background-color: var(--primary-shadow);
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* 
+  Hero section
+*/
+
+.hero {
+  padding: 4.8rem 0 9.6rem 0;
+
+  background-color: var(--primary-tint);
+}
+
+.hero_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+
+  max-width: 130rem;
+}
+
+.hero_image {
+  width: 100%;
+}
+
+.hero_description {
+  margin-bottom: 4.8rem;
+
+  font-size: 2rem;
+
+  line-height: 1.5;
+}
+
+.hero_primary_btn:link,
+.hero_primary_btn:visited {
+  color: var(--white);
+  background-color: var(--primary);
+
+  transition: all 300ms;
+}
+
+.hero_secondary_btn:link,
+.hero_secondary_btn:visited {
+  color: var(--gray);
+  background-color: var(--white);
+
+  transition: all 300ms;
+}
+
+.hero_primary_btn:hover,
+.hero_primary_btn:active {
+  color: var(--white);
+  background-color: var(--primary-shadow);
+}
+
+.hero_secondary_btn:hover,
+.hero_secondary_btn:active {
+  color: var(--gray);
+  background-color: var(--primary-tint);
+
+  border: 3px solid var(--white);
+}
+
+/* Delivered nested into hero section */
+
+.delivered_meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  margin-top: 8rem;
+}
+
+.delivered_images {
+  display: flex;
+}
+
+.delivered_image {
+  height: 4.8rem;
+  width: 4.8rem;
+
+  border: 3px solid var(--primary-tint);
+  border-radius: 50%;
+}
+
+.delivered_image:not(:last-child) {
+  margin-right: -1.6rem;
+}
+
+.delivered_text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.orange_modificator {
+  font-weight: 700;
+
+  color: var(--primary-shadow);
+}
+
+/* 
+  Featured section
+*/
+
+.featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading_featured_in {
+  margin-bottom: 2.4rem;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  letter-spacing: 0.75px;
+
+  color: var(--gray-medium-ligth);
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.featured_image {
+  height: 3.2rem;
+}
+
+/* 
+  How it work section
+*/
+
+.story {
+  padding: 9.6rem 0;
+}
+
+.step_image_box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step_image_box::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+  display: block;
+
+  width: 60%;
+  padding-bottom: 60%;
+
+  border-radius: 50%;
+
+  background-color: var(--primary-tint);
+}
+
+.step_image_box::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+  display: block;
+
+  width: 45%;
+  padding-bottom: 45%;
+
+  border-radius: 50%;
+
+  background-color: var(--primary-tint-300);
+}
+
+.step_image {
+  width: 35%;
+}
+
+.step_number {
+  margin-bottom: 1.2rem;
+
+  font-size: 8.6rem;
+  font-weight: 600;
+
+  color: var(--gray-light);
+}
+
+.step_description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* 
+  Meals section
+*/
+
+.meals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+  border-radius: 11px;
+
+  overflow: hidden;
+
+  transition: all 300ms;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal_content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal_tags {
+  display: flex;
+  gap: 0.4rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.tag {
+  display: inline-block;
+
+  padding: 0.4rem 0.8rem;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  border-radius: 100px;
+
+  color: var(--gray-dark);
+}
+
+.tag--vegeterian {
+  background-color: var(--green);
+}
+
+.tag--vegan {
+  background-color: var(--lime);
+}
+
+.tag--paleo {
+  background-color: var(--limon);
+}
+
+.meal_title {
+  margin-bottom: 3.2rem;
+
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  color: var(--gray-dark);
+}
+
+.meal_attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  list-style: none;
+}
+
+.meal_attribute {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.6rem;
+
+  font-size: 1.8rem;
+}
+
+.meal_image {
+  width: 100%;
+}
+
+.meal_icon {
+  height: 2.4rem;
+  width: 2.4rem;
+
+  color: var(--primary);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  list-style: none;
+}
+
+.list_item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  font-size: 1.8rem;
+}
+
+.check_icon {
+  width: 3rem;
+  height: 3rem;
+
+  color: var(--primary);
+}
+
+.all_recipes {
+  font-size: 1.8rem;
+
+  text-align: center;
+}
+
+/* 
+  Testimonials section
+*/
+
+.testimonial_section {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+
+  background-color: var(--primary-tint);
+}
+
+.testimonials_container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial_image {
+  width: 6.4rem;
+
+  margin-bottom: 1.2rem;
+
+  border-radius: 50%;
+}
+
+.testimonial_text {
+  margin-bottom: 1.6rem;
+
+  font-size: 1.8rem;
+
+  line-height: 1.8;
+}
+
+.testimonial_name {
+  font-size: 1.6rem;
+
+  color: var(--gray-little-dark);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+
+  padding: 1.6rem;
+}
+
+.gallery_item {
+  overflow: hidden;
+}
+
+.gallery_item img {
+  display: block;
+
+  width: 100%;
+
+  transition: all 300ms;
+}
+
+.gallery_item img:hover {
+  transform: scale(1.1);
+}
+
+/* 
+  Pricing section
+*/
+
+.pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing_plan {
+  width: 75%;
+
+  padding: 4.8rem;
+
+  border-radius: 11px;
+}
+
+.pricing_plan--starter {
+  justify-self: end;
+
+  border: 2px solid var(--primary-tint);
+}
+
+.pricing_plan--complete {
+  position: relative;
+
+  background-color: var(--primary-tint);
+
+  border: 2px solid transparent;
+
+  overflow: hidden;
+}
+
+.pricing_plan--complete::after {
+  content: "Best value";
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  transform: rotate(45deg);
+
+  padding: 0.8rem 8rem;
+
+  color: var(--gray-dark);
+  background-color: var(--yellow);
+
+  display: block;
+}
+
+.plan_header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan_name {
+  margin-bottom: 3.2rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+
+  color: var(--primary-shadow);
+}
+
+.plan_price {
+  margin-bottom: 1.6rem;
+
+  font-size: 6.2rem;
+  font-weight: 600;
+
+  color: var(--gray-dark);
+}
+
+.plan_price span {
+  margin-right: 0.8rem;
+
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.text_plane {
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  color: var(--gray-little-dark);
+}
+
+.plan_sign_up {
+  margin-top: 4.8rem;
+
+  text-align: center;
+}
+
+.feature_icon {
+  height: 3.2rem;
+  width: 3.2rem;
+
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+
+  border-radius: 50%;
+
+  background-color: var(--primary-tint);
+  color: var(--primary);
+}
+
+.feature_title {
+  margin-bottom: 1.6rem;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  color: var(--gray-dark);
+}
+
+.feature_text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.plan_details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+/* 
+  Call to action section
+*/
+
+.cta_section {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+
+  border-radius: 15px;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+
+  overflow: hidden;
+}
+
+.cta *:focus {
+  outline: none;
+
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.cta_image_box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta .heading_secondary {
+  margin-bottom: 3.2rem;
+
+  color: var(--primary-shadow-800);
+}
+
+.cta_text_box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+  color: var(--primary-shadow-800);
+}
+
+.cta_text {
+  margin-bottom: 4.8rem;
+
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.cta_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta_form label {
+  display: block;
+
+  margin-bottom: 1.2rem;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.cta_form input,
+.cta_form select {
+  width: 100%;
+
+  padding: 1.2rem;
+
+  font-size: 1.8rem;
+  font-family: inherit;
+
+  border-radius: 9px;
+  border: none;
+
+  color: inherit;
+  background-color: var(--primary-tint);
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta_form input::placeholder {
+  color: var(--gray);
+}
+
+.sign_up {
+  align-self: end;
+
+  padding: 1.1rem;
+
+  font-family: inherit;
+
+  border: none;
+
+  color: var(--primary-tint);
+  background-color: var(--primary-shadow-800);
+
+  transition: all 300ms;
+}
+
+.sign_up:hover {
+  color: var(--gray);
+  background-color: var(--white);
+}
+
+/* 
+  Footer
+*/
